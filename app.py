@@ -3,7 +3,7 @@ import json
 
 app = Flask(__name__)
 with open('datos.json') as file:
-    datos = json.dump(file)
+    datos = json.load(file)
 
 @app.route('/')
 def index():
