@@ -2,7 +2,7 @@ from flask import Flask, jsonify
 import json
 
 app = Flask(__name__)
-with open('datos.json') as file:
+with open('generated.json') as file:
     datos = json.load(file)
 
 @app.route('/')
